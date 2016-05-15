@@ -1,15 +1,22 @@
 ﻿Public Class MainForm
     Private Sub btnTransparency_Click(sender As Object, e As EventArgs) Handles btnTransparency.Click
-        Dim frmTransparency As New Transparency
-        Me.Hide()
-        frmTransparency.ShowDialog()
-        Me.Show()
+        ShowModal(New TransparencyForm)
     End Sub
 
     Private Sub btnEvent_Click(sender As Object, e As EventArgs) Handles btnEvent.Click
-        Dim frmEvent As New EventHandlers
+        ShowModal(New EventForm)
+    End Sub
+
+
+    Private Sub btnByRef_Click(sender As Object, e As EventArgs) Handles btnByRef.Click
+        ShowModal(New ByRefForm)
+    End Sub
+
+
+
+    Private Sub ShowModal(form As Form)
         Me.Hide()
-        frmEvent.ShowDialog()
+        form.ShowDialog()
         Me.Show()
     End Sub
 End Class

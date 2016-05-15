@@ -1,4 +1,4 @@
-﻿Public Class EventHandlers
+﻿Public Class EventForm
 
     Private Sub Apple_Banana_Orange(sender As Object, e As EventArgs) Handles btnPrint.Click
         lblPrint.Text = lblPrint.Text + "*"

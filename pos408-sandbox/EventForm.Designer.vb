@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class EventHandlers
+Partial Class EventForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -50,14 +50,14 @@ Partial Class EventHandlers
         '
         Me.Timer1.Enabled = True
         '
-        'EventHandlers
+        'EventForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(362, 324)
         Me.Controls.Add(Me.lblPrint)
         Me.Controls.Add(Me.btnPrint)
-        Me.Name = "EventHandlers"
+        Me.Name = "EventForm"
         Me.Text = "Event"
         Me.ResumeLayout(False)
         Me.PerformLayout()

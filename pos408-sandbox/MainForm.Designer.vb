@@ -22,20 +22,21 @@ Partial Class MainForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblTitle = New System.Windows.Forms.Label()
         Me.btnTransparency = New System.Windows.Forms.Button()
+        Me.btnByRef = New System.Windows.Forms.Button()
         Me.btnEvent = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Label1
+        'lblTitle
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(195, 37)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "VB Sandbox"
+        Me.lblTitle.AutoSize = True
+        Me.lblTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitle.Location = New System.Drawing.Point(12, 9)
+        Me.lblTitle.Name = "lblTitle"
+        Me.lblTitle.Size = New System.Drawing.Size(195, 37)
+        Me.lblTitle.TabIndex = 0
+        Me.lblTitle.Text = "VB Sandbox"
         '
         'btnTransparency
         '
@@ -47,13 +48,23 @@ Partial Class MainForm
         Me.btnTransparency.Text = "Transparency"
         Me.btnTransparency.UseVisualStyleBackColor = True
         '
+        'btnByRef
+        '
+        Me.btnByRef.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnByRef.Location = New System.Drawing.Point(19, 166)
+        Me.btnByRef.Name = "btnByRef"
+        Me.btnByRef.Size = New System.Drawing.Size(124, 37)
+        Me.btnByRef.TabIndex = 3
+        Me.btnByRef.Text = "ByRef"
+        Me.btnByRef.UseVisualStyleBackColor = True
+        '
         'btnEvent
         '
         Me.btnEvent.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEvent.Location = New System.Drawing.Point(22, 141)
+        Me.btnEvent.Location = New System.Drawing.Point(19, 123)
         Me.btnEvent.Name = "btnEvent"
-        Me.btnEvent.Size = New System.Drawing.Size(120, 28)
-        Me.btnEvent.TabIndex = 2
+        Me.btnEvent.Size = New System.Drawing.Size(124, 37)
+        Me.btnEvent.TabIndex = 4
         Me.btnEvent.Text = "Event"
         Me.btnEvent.UseVisualStyleBackColor = True
         '
@@ -61,17 +72,19 @@ Partial Class MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.ClientSize = New System.Drawing.Size(382, 327)
         Me.Controls.Add(Me.btnEvent)
+        Me.Controls.Add(Me.btnByRef)
         Me.Controls.Add(Me.btnTransparency)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblTitle)
         Me.Name = "MainForm"
         Me.Text = "Sandbox"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents lblTitle As System.Windows.Forms.Label
     Friend WithEvents btnTransparency As System.Windows.Forms.Button
+    Friend WithEvents btnByRef As System.Windows.Forms.Button
     Friend WithEvents btnEvent As System.Windows.Forms.Button
 End Class

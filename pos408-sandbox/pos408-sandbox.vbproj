@@ -70,17 +70,23 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Event.Designer.vb">
-      <DependentUpon>Event.vb</DependentUpon>
+    <Compile Include="ByRefForm.Designer.vb">
+      <DependentUpon>ByRefForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Event.vb">
+    <Compile Include="ByRefForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Transparency.vb">
+    <Compile Include="EventForm.Designer.vb">
+      <DependentUpon>EventForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EventForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Transparency.Designer.vb">
-      <DependentUpon>Transparency.vb</DependentUpon>
+    <Compile Include="TransparencyForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransparencyForm.Designer.vb">
+      <DependentUpon>TransparencyForm.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.vb">
@@ -106,11 +112,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Event.resx">
-      <DependentUpon>Event.vb</DependentUpon>
+    <EmbeddedResource Include="EventForm.resx">
+      <DependentUpon>EventForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Transparency.resx">
-      <DependentUpon>Transparency.vb</DependentUpon>
+    <EmbeddedResource Include="TransparencyForm.resx">
+      <DependentUpon>TransparencyForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
