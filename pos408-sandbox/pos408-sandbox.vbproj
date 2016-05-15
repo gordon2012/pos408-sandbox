@@ -70,6 +70,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Event.Designer.vb">
+      <DependentUpon>Event.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Event.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Transparency.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Event.resx">
+      <DependentUpon>Event.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Transparency.resx">
       <DependentUpon>Transparency.vb</DependentUpon>
     </EmbeddedResource>
