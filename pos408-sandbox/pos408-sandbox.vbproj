@@ -76,6 +76,12 @@
     <Compile Include="ByRefForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ConstantForm.Designer.vb">
+      <DependentUpon>ConstantForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConstantForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="EventForm.Designer.vb">
       <DependentUpon>EventForm.vb</DependentUpon>
     </Compile>
@@ -112,6 +118,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ConstantForm.resx">
+      <DependentUpon>ConstantForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EventForm.resx">
       <DependentUpon>EventForm.vb</DependentUpon>
     </EmbeddedResource>

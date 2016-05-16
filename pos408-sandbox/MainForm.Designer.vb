@@ -26,6 +26,7 @@ Partial Class MainForm
         Me.btnTransparency = New System.Windows.Forms.Button()
         Me.btnByRef = New System.Windows.Forms.Button()
         Me.btnEvent = New System.Windows.Forms.Button()
+        Me.btnConstant = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblTitle
@@ -68,11 +69,22 @@ Partial Class MainForm
         Me.btnEvent.Text = "Event"
         Me.btnEvent.UseVisualStyleBackColor = True
         '
+        'btnConstant
+        '
+        Me.btnConstant.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConstant.Location = New System.Drawing.Point(19, 209)
+        Me.btnConstant.Name = "btnConstant"
+        Me.btnConstant.Size = New System.Drawing.Size(124, 37)
+        Me.btnConstant.TabIndex = 5
+        Me.btnConstant.Text = "Constant"
+        Me.btnConstant.UseVisualStyleBackColor = True
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(382, 327)
+        Me.Controls.Add(Me.btnConstant)
         Me.Controls.Add(Me.btnEvent)
         Me.Controls.Add(Me.btnByRef)
         Me.Controls.Add(Me.btnTransparency)
@@ -87,4 +99,5 @@ Partial Class MainForm
     Friend WithEvents btnTransparency As System.Windows.Forms.Button
     Friend WithEvents btnByRef As System.Windows.Forms.Button
     Friend WithEvents btnEvent As System.Windows.Forms.Button
+    Friend WithEvents btnConstant As System.Windows.Forms.Button
 End Class
