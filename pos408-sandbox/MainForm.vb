@@ -26,4 +26,8 @@
     Private Sub btnAppend_Click(sender As Object, e As EventArgs) Handles btnAppend.Click
         ShowModal(New AppendForm)
     End Sub
+
+    Private Sub btnOrElse_Click(sender As Object, e As EventArgs) Handles btnOrElse.Click
+        ShowModal(New OrElseForm)
+    End Sub
 End Class
