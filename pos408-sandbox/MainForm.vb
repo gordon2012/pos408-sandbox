@@ -22,4 +22,8 @@
     Private Sub btnConstant_Click(sender As Object, e As EventArgs) Handles btnConstant.Click
         ShowModal(New ConstantForm)
     End Sub
+
+    Private Sub btnAppend_Click(sender As Object, e As EventArgs) Handles btnAppend.Click
+        ShowModal(New AppendForm)
+    End Sub
 End Class

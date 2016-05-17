@@ -70,6 +70,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppendForm.Designer.vb">
+      <DependentUpon>AppendForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AppendForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ByRefForm.Designer.vb">
       <DependentUpon>ByRefForm.vb</DependentUpon>
     </Compile>
@@ -118,6 +124,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AppendForm.resx">
+      <DependentUpon>AppendForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConstantForm.resx">
       <DependentUpon>ConstantForm.vb</DependentUpon>
     </EmbeddedResource>

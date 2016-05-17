@@ -27,6 +27,7 @@ Partial Class MainForm
         Me.btnByRef = New System.Windows.Forms.Button()
         Me.btnEvent = New System.Windows.Forms.Button()
         Me.btnConstant = New System.Windows.Forms.Button()
+        Me.btnAppend = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblTitle
@@ -79,11 +80,22 @@ Partial Class MainForm
         Me.btnConstant.Text = "Constant"
         Me.btnConstant.UseVisualStyleBackColor = True
         '
+        'btnAppend
+        '
+        Me.btnAppend.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAppend.Location = New System.Drawing.Point(19, 252)
+        Me.btnAppend.Name = "btnAppend"
+        Me.btnAppend.Size = New System.Drawing.Size(124, 37)
+        Me.btnAppend.TabIndex = 6
+        Me.btnAppend.Text = "Append"
+        Me.btnAppend.UseVisualStyleBackColor = True
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(382, 327)
+        Me.Controls.Add(Me.btnAppend)
         Me.Controls.Add(Me.btnConstant)
         Me.Controls.Add(Me.btnEvent)
         Me.Controls.Add(Me.btnByRef)
@@ -100,4 +112,5 @@ Partial Class MainForm
     Friend WithEvents btnByRef As System.Windows.Forms.Button
     Friend WithEvents btnEvent As System.Windows.Forms.Button
     Friend WithEvents btnConstant As System.Windows.Forms.Button
+    Friend WithEvents btnAppend As System.Windows.Forms.Button
 End Class
