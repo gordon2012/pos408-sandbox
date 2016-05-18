@@ -6,6 +6,10 @@
     End Sub
 
 
+    Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'ShowModal(New _)
+    End Sub
+
 
     Private Sub btnTransparency_Click(sender As Object, e As EventArgs) Handles btnTransparency.Click
         ShowModal(New TransparencyForm)
@@ -29,5 +33,9 @@
 
     Private Sub btnOrElse_Click(sender As Object, e As EventArgs) Handles btnOrElse.Click
         ShowModal(New OrElseForm)
+    End Sub
+
+    Private Sub btnErrorLabel_Click(sender As Object, e As EventArgs) Handles btnErrorLabel.Click
+        ShowModal(New ErrorLabelForm)
     End Sub
 End Class

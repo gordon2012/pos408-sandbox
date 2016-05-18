@@ -32,6 +32,7 @@ Partial Class MainForm
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.btnErrorLabel = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -104,7 +105,7 @@ Partial Class MainForm
         Me.btnOrElse.Name = "btnOrElse"
         Me.btnOrElse.Size = New System.Drawing.Size(124, 37)
         Me.btnOrElse.TabIndex = 7
-        Me.btnOrElse.Text = "OrElse"
+        Me.btnOrElse.Text = "Or Else"
         Me.btnOrElse.UseVisualStyleBackColor = True
         '
         'GroupBox1
@@ -134,6 +135,7 @@ Partial Class MainForm
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.btnErrorLabel)
         Me.GroupBox3.Controls.Add(Me.btnOrElse)
         Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.Location = New System.Drawing.Point(327, 80)
@@ -142,6 +144,16 @@ Partial Class MainForm
         Me.GroupBox3.TabIndex = 9
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Week 3"
+        '
+        'btnErrorLabel
+        '
+        Me.btnErrorLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnErrorLabel.Location = New System.Drawing.Point(12, 67)
+        Me.btnErrorLabel.Name = "btnErrorLabel"
+        Me.btnErrorLabel.Size = New System.Drawing.Size(124, 37)
+        Me.btnErrorLabel.TabIndex = 8
+        Me.btnErrorLabel.Text = "Error Label"
+        Me.btnErrorLabel.UseVisualStyleBackColor = True
         '
         'MainForm
         '
@@ -171,4 +183,5 @@ Partial Class MainForm
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
+    Friend WithEvents btnErrorLabel As System.Windows.Forms.Button
 End Class
