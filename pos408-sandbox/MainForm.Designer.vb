@@ -33,6 +33,7 @@ Partial Class MainForm
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.btnErrorLabel = New System.Windows.Forms.Button()
+        Me.btnFlowchart = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -135,6 +136,7 @@ Partial Class MainForm
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.btnFlowchart)
         Me.GroupBox3.Controls.Add(Me.btnErrorLabel)
         Me.GroupBox3.Controls.Add(Me.btnOrElse)
         Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -154,6 +156,16 @@ Partial Class MainForm
         Me.btnErrorLabel.TabIndex = 8
         Me.btnErrorLabel.Text = "Error Label"
         Me.btnErrorLabel.UseVisualStyleBackColor = True
+        '
+        'btnFlowchart
+        '
+        Me.btnFlowchart.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFlowchart.Location = New System.Drawing.Point(12, 110)
+        Me.btnFlowchart.Name = "btnFlowchart"
+        Me.btnFlowchart.Size = New System.Drawing.Size(124, 37)
+        Me.btnFlowchart.TabIndex = 9
+        Me.btnFlowchart.Text = "Flowchart"
+        Me.btnFlowchart.UseVisualStyleBackColor = True
         '
         'MainForm
         '
@@ -184,4 +196,5 @@ Partial Class MainForm
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents btnErrorLabel As System.Windows.Forms.Button
+    Friend WithEvents btnFlowchart As System.Windows.Forms.Button
 End Class

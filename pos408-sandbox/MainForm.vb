@@ -7,7 +7,7 @@
 
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'ShowModal(New _)
+        'ShowModal(New FlowchartForm)
     End Sub
 
 
@@ -37,5 +37,9 @@
 
     Private Sub btnErrorLabel_Click(sender As Object, e As EventArgs) Handles btnErrorLabel.Click
         ShowModal(New ErrorLabelForm)
+    End Sub
+
+    Private Sub btnFlowchart_Click(sender As Object, e As EventArgs) Handles btnFlowchart.Click
+        ShowModal(New FlowchartForm)
     End Sub
 End Class

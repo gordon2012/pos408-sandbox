@@ -100,6 +100,12 @@
     <Compile Include="EventForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FlowchartForm.Designer.vb">
+      <DependentUpon>FlowchartForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FlowchartForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="OrElseForm.Designer.vb">
       <DependentUpon>OrElseForm.vb</DependentUpon>
     </Compile>
@@ -147,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EventForm.resx">
       <DependentUpon>EventForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlowchartForm.resx">
+      <DependentUpon>FlowchartForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrElseForm.resx">
       <DependentUpon>OrElseForm.vb</DependentUpon>
