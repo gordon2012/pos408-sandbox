@@ -1,6 +1,4 @@
 ﻿Public Class FlowchartForm
-
-
     Private Sub DoValidation()
         If Double.TryParse(txtInput.Text, Nothing) Then
             lblInput.Visible = False
@@ -16,16 +14,11 @@
         End If
     End Sub
 
-
     Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
-
-        'Dim int As Integer = Math.Truncate(Double.Parse(txtInput.Text))
-
         Dim f As Double = Double.Parse(txtInput.Text)
         Dim fi As Integer = CInt(Math.Truncate(f))
         Dim fr As Double = Math.Abs(f) - Math.Abs(fi)
 
-        'lblOutput.Text = f.ToString() + " | " + fi.ToString() + " | " + fr.ToString()
         Dim out As Double
 
         If fr > 0.5 Then
@@ -41,9 +34,6 @@
         End If
 
         lblOutput.Text = out.ToString()
-
-
-
     End Sub
 
     Private Sub FlowchartForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load

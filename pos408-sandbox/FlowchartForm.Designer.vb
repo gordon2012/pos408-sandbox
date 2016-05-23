@@ -77,7 +77,6 @@ Partial Class FlowchartForm
         Me.GroupBox1.Size = New System.Drawing.Size(199, 44)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Result"
         '
         'lblInput
         '
