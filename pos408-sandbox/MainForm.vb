@@ -7,7 +7,7 @@
 
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'ShowModal(New FlowchartForm)
+        ShowModal(New ComplexConditionalForm)
     End Sub
 
 
@@ -41,5 +41,9 @@
 
     Private Sub btnFlowchart_Click(sender As Object, e As EventArgs) Handles btnFlowchart.Click
         ShowModal(New FlowchartForm)
+    End Sub
+
+    Private Sub btnConditional_Click(sender As Object, e As EventArgs) Handles btnConditional.Click
+        ShowModal(New ComplexConditionalForm)
     End Sub
 End Class

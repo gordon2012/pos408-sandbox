@@ -82,6 +82,12 @@
     <Compile Include="ByRefForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ComplexConditionalForm.Designer.vb">
+      <DependentUpon>ComplexConditionalForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ComplexConditionalForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ConstantForm.Designer.vb">
       <DependentUpon>ConstantForm.vb</DependentUpon>
     </Compile>
@@ -144,6 +150,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AppendForm.resx">
       <DependentUpon>AppendForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComplexConditionalForm.resx">
+      <DependentUpon>ComplexConditionalForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConstantForm.resx">
       <DependentUpon>ConstantForm.vb</DependentUpon>
