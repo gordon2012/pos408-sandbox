@@ -7,7 +7,7 @@
 
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ShowModal(New ComplexConditionalForm)
+        'ShowModal(New RomanNumeralForm)
     End Sub
 
 
@@ -45,5 +45,9 @@
 
     Private Sub btnConditional_Click(sender As Object, e As EventArgs) Handles btnConditional.Click
         ShowModal(New ComplexConditionalForm)
+    End Sub
+
+    Private Sub btnRomanNumeral_Click(sender As Object, e As EventArgs) Handles btnRomanNumeral.Click
+        ShowModal(New RomanNumeralForm)
     End Sub
 End Class

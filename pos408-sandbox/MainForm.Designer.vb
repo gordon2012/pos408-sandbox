@@ -32,9 +32,10 @@ Partial Class MainForm
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.btnConditional = New System.Windows.Forms.Button()
         Me.btnFlowchart = New System.Windows.Forms.Button()
         Me.btnErrorLabel = New System.Windows.Forms.Button()
-        Me.btnConditional = New System.Windows.Forms.Button()
+        Me.btnRomanNumeral = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -116,7 +117,7 @@ Partial Class MainForm
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(19, 80)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(148, 200)
+        Me.GroupBox1.Size = New System.Drawing.Size(148, 244)
         Me.GroupBox1.TabIndex = 8
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Week 1"
@@ -130,13 +131,14 @@ Partial Class MainForm
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(173, 80)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(148, 200)
+        Me.GroupBox2.Size = New System.Drawing.Size(148, 244)
         Me.GroupBox2.TabIndex = 9
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Week 2"
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.btnRomanNumeral)
         Me.GroupBox3.Controls.Add(Me.btnConditional)
         Me.GroupBox3.Controls.Add(Me.btnFlowchart)
         Me.GroupBox3.Controls.Add(Me.btnErrorLabel)
@@ -144,10 +146,20 @@ Partial Class MainForm
         Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.Location = New System.Drawing.Point(327, 80)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(148, 200)
+        Me.GroupBox3.Size = New System.Drawing.Size(148, 244)
         Me.GroupBox3.TabIndex = 9
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Week 3"
+        '
+        'btnConditional
+        '
+        Me.btnConditional.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConditional.Location = New System.Drawing.Point(12, 153)
+        Me.btnConditional.Name = "btnConditional"
+        Me.btnConditional.Size = New System.Drawing.Size(124, 37)
+        Me.btnConditional.TabIndex = 10
+        Me.btnConditional.Text = "Conditional"
+        Me.btnConditional.UseVisualStyleBackColor = True
         '
         'btnFlowchart
         '
@@ -169,21 +181,21 @@ Partial Class MainForm
         Me.btnErrorLabel.Text = "Error Label"
         Me.btnErrorLabel.UseVisualStyleBackColor = True
         '
-        'btnConditional
+        'btnRomanNumeral
         '
-        Me.btnConditional.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnConditional.Location = New System.Drawing.Point(12, 153)
-        Me.btnConditional.Name = "btnConditional"
-        Me.btnConditional.Size = New System.Drawing.Size(124, 37)
-        Me.btnConditional.TabIndex = 10
-        Me.btnConditional.Text = "Conditional"
-        Me.btnConditional.UseVisualStyleBackColor = True
+        Me.btnRomanNumeral.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRomanNumeral.Location = New System.Drawing.Point(12, 196)
+        Me.btnRomanNumeral.Name = "btnRomanNumeral"
+        Me.btnRomanNumeral.Size = New System.Drawing.Size(124, 37)
+        Me.btnRomanNumeral.TabIndex = 11
+        Me.btnRomanNumeral.Text = "Roman"
+        Me.btnRomanNumeral.UseVisualStyleBackColor = True
         '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(493, 302)
+        Me.ClientSize = New System.Drawing.Size(493, 338)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -210,4 +222,5 @@ Partial Class MainForm
     Friend WithEvents btnErrorLabel As System.Windows.Forms.Button
     Friend WithEvents btnFlowchart As System.Windows.Forms.Button
     Friend WithEvents btnConditional As System.Windows.Forms.Button
+    Friend WithEvents btnRomanNumeral As System.Windows.Forms.Button
 End Class

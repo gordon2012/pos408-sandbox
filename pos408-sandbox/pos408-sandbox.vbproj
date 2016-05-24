@@ -118,6 +118,12 @@
     <Compile Include="OrElseForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="RomanNumeralForm.Designer.vb">
+      <DependentUpon>RomanNumeralForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RomanNumeralForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TransparencyForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OrElseForm.resx">
       <DependentUpon>OrElseForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RomanNumeralForm.resx">
+      <DependentUpon>RomanNumeralForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TransparencyForm.resx">
       <DependentUpon>TransparencyForm.vb</DependentUpon>
