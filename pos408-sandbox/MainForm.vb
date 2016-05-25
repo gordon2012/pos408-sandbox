@@ -7,7 +7,7 @@
 
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'ShowModal(New RomanNumeralForm)
+        ShowModal(New SoftwareSalesForm)
     End Sub
 
 
@@ -49,5 +49,9 @@
 
     Private Sub btnRomanNumeral_Click(sender As Object, e As EventArgs) Handles btnRomanNumeral.Click
         ShowModal(New RomanNumeralForm)
+    End Sub
+
+    Private Sub btnSoftwareSales_Click(sender As Object, e As EventArgs) Handles btnSoftwareSales.Click
+        ShowModal(New SoftwareSalesForm)
     End Sub
 End Class
