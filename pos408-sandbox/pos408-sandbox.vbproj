@@ -118,6 +118,12 @@
     <Compile Include="OrElseForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="RandomSentencesForm.Designer.vb">
+      <DependentUpon>RandomSentencesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RandomSentencesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="RomanNumeralForm.Designer.vb">
       <DependentUpon>RomanNumeralForm.vb</DependentUpon>
     </Compile>
@@ -180,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OrElseForm.resx">
       <DependentUpon>OrElseForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandomSentencesForm.resx">
+      <DependentUpon>RandomSentencesForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RomanNumeralForm.resx">
       <DependentUpon>RomanNumeralForm.vb</DependentUpon>

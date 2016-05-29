@@ -32,14 +32,17 @@ Partial Class MainForm
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.btnSoftwareSales = New System.Windows.Forms.Button()
         Me.btnRomanNumeral = New System.Windows.Forms.Button()
         Me.btnConditional = New System.Windows.Forms.Button()
         Me.btnFlowchart = New System.Windows.Forms.Button()
         Me.btnErrorLabel = New System.Windows.Forms.Button()
-        Me.btnSoftwareSales = New System.Windows.Forms.Button()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.btnSentences = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblTitle
@@ -58,7 +61,7 @@ Partial Class MainForm
         Me.btnTransparency.Location = New System.Drawing.Point(12, 24)
         Me.btnTransparency.Name = "btnTransparency"
         Me.btnTransparency.Size = New System.Drawing.Size(124, 37)
-        Me.btnTransparency.TabIndex = 1
+        Me.btnTransparency.TabIndex = 0
         Me.btnTransparency.Text = "Transparency"
         Me.btnTransparency.UseVisualStyleBackColor = True
         '
@@ -68,7 +71,7 @@ Partial Class MainForm
         Me.btnByRef.Location = New System.Drawing.Point(12, 67)
         Me.btnByRef.Name = "btnByRef"
         Me.btnByRef.Size = New System.Drawing.Size(124, 37)
-        Me.btnByRef.TabIndex = 3
+        Me.btnByRef.TabIndex = 1
         Me.btnByRef.Text = "ByRef"
         Me.btnByRef.UseVisualStyleBackColor = True
         '
@@ -78,7 +81,7 @@ Partial Class MainForm
         Me.btnEvent.Location = New System.Drawing.Point(12, 24)
         Me.btnEvent.Name = "btnEvent"
         Me.btnEvent.Size = New System.Drawing.Size(124, 37)
-        Me.btnEvent.TabIndex = 4
+        Me.btnEvent.TabIndex = 0
         Me.btnEvent.Text = "Event"
         Me.btnEvent.UseVisualStyleBackColor = True
         '
@@ -88,7 +91,7 @@ Partial Class MainForm
         Me.btnConstant.Location = New System.Drawing.Point(12, 110)
         Me.btnConstant.Name = "btnConstant"
         Me.btnConstant.Size = New System.Drawing.Size(124, 37)
-        Me.btnConstant.TabIndex = 5
+        Me.btnConstant.TabIndex = 2
         Me.btnConstant.Text = "Constant"
         Me.btnConstant.UseVisualStyleBackColor = True
         '
@@ -98,7 +101,7 @@ Partial Class MainForm
         Me.btnAppend.Location = New System.Drawing.Point(12, 153)
         Me.btnAppend.Name = "btnAppend"
         Me.btnAppend.Size = New System.Drawing.Size(124, 37)
-        Me.btnAppend.TabIndex = 6
+        Me.btnAppend.TabIndex = 3
         Me.btnAppend.Text = "Append"
         Me.btnAppend.UseVisualStyleBackColor = True
         '
@@ -108,7 +111,7 @@ Partial Class MainForm
         Me.btnOrElse.Location = New System.Drawing.Point(12, 24)
         Me.btnOrElse.Name = "btnOrElse"
         Me.btnOrElse.Size = New System.Drawing.Size(124, 37)
-        Me.btnOrElse.TabIndex = 7
+        Me.btnOrElse.TabIndex = 0
         Me.btnOrElse.Text = "Or Else"
         Me.btnOrElse.UseVisualStyleBackColor = True
         '
@@ -119,7 +122,7 @@ Partial Class MainForm
         Me.GroupBox1.Location = New System.Drawing.Point(19, 80)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(148, 71)
-        Me.GroupBox1.TabIndex = 8
+        Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Week 1"
         '
@@ -133,7 +136,7 @@ Partial Class MainForm
         Me.GroupBox2.Location = New System.Drawing.Point(173, 80)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(148, 200)
-        Me.GroupBox2.TabIndex = 9
+        Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Week 2"
         '
@@ -149,9 +152,19 @@ Partial Class MainForm
         Me.GroupBox3.Location = New System.Drawing.Point(327, 80)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(148, 288)
-        Me.GroupBox3.TabIndex = 9
+        Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Week 3"
+        '
+        'btnSoftwareSales
+        '
+        Me.btnSoftwareSales.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSoftwareSales.Location = New System.Drawing.Point(12, 239)
+        Me.btnSoftwareSales.Name = "btnSoftwareSales"
+        Me.btnSoftwareSales.Size = New System.Drawing.Size(124, 37)
+        Me.btnSoftwareSales.TabIndex = 5
+        Me.btnSoftwareSales.Text = "Software"
+        Me.btnSoftwareSales.UseVisualStyleBackColor = True
         '
         'btnRomanNumeral
         '
@@ -159,7 +172,7 @@ Partial Class MainForm
         Me.btnRomanNumeral.Location = New System.Drawing.Point(12, 196)
         Me.btnRomanNumeral.Name = "btnRomanNumeral"
         Me.btnRomanNumeral.Size = New System.Drawing.Size(124, 37)
-        Me.btnRomanNumeral.TabIndex = 11
+        Me.btnRomanNumeral.TabIndex = 4
         Me.btnRomanNumeral.Text = "Roman"
         Me.btnRomanNumeral.UseVisualStyleBackColor = True
         '
@@ -169,7 +182,7 @@ Partial Class MainForm
         Me.btnConditional.Location = New System.Drawing.Point(12, 153)
         Me.btnConditional.Name = "btnConditional"
         Me.btnConditional.Size = New System.Drawing.Size(124, 37)
-        Me.btnConditional.TabIndex = 10
+        Me.btnConditional.TabIndex = 3
         Me.btnConditional.Text = "Conditional"
         Me.btnConditional.UseVisualStyleBackColor = True
         '
@@ -179,7 +192,7 @@ Partial Class MainForm
         Me.btnFlowchart.Location = New System.Drawing.Point(12, 110)
         Me.btnFlowchart.Name = "btnFlowchart"
         Me.btnFlowchart.Size = New System.Drawing.Size(124, 37)
-        Me.btnFlowchart.TabIndex = 9
+        Me.btnFlowchart.TabIndex = 2
         Me.btnFlowchart.Text = "Flowchart"
         Me.btnFlowchart.UseVisualStyleBackColor = True
         '
@@ -189,25 +202,37 @@ Partial Class MainForm
         Me.btnErrorLabel.Location = New System.Drawing.Point(12, 67)
         Me.btnErrorLabel.Name = "btnErrorLabel"
         Me.btnErrorLabel.Size = New System.Drawing.Size(124, 37)
-        Me.btnErrorLabel.TabIndex = 8
+        Me.btnErrorLabel.TabIndex = 1
         Me.btnErrorLabel.Text = "Error Label"
         Me.btnErrorLabel.UseVisualStyleBackColor = True
         '
-        'btnSoftwareSales
+        'GroupBox4
         '
-        Me.btnSoftwareSales.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSoftwareSales.Location = New System.Drawing.Point(12, 239)
-        Me.btnSoftwareSales.Name = "btnSoftwareSales"
-        Me.btnSoftwareSales.Size = New System.Drawing.Size(124, 37)
-        Me.btnSoftwareSales.TabIndex = 12
-        Me.btnSoftwareSales.Text = "Software"
-        Me.btnSoftwareSales.UseVisualStyleBackColor = True
+        Me.GroupBox4.Controls.Add(Me.btnSentences)
+        Me.GroupBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox4.Location = New System.Drawing.Point(481, 80)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(148, 71)
+        Me.GroupBox4.TabIndex = 3
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Week 4"
+        '
+        'btnSentences
+        '
+        Me.btnSentences.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSentences.Location = New System.Drawing.Point(12, 24)
+        Me.btnSentences.Name = "btnSentences"
+        Me.btnSentences.Size = New System.Drawing.Size(124, 37)
+        Me.btnSentences.TabIndex = 0
+        Me.btnSentences.Text = "Sentences"
+        Me.btnSentences.UseVisualStyleBackColor = True
         '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(493, 456)
+        Me.ClientSize = New System.Drawing.Size(646, 378)
+        Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -217,6 +242,7 @@ Partial Class MainForm
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox4.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -236,4 +262,6 @@ Partial Class MainForm
     Friend WithEvents btnConditional As System.Windows.Forms.Button
     Friend WithEvents btnRomanNumeral As System.Windows.Forms.Button
     Friend WithEvents btnSoftwareSales As System.Windows.Forms.Button
+    Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
+    Friend WithEvents btnSentences As System.Windows.Forms.Button
 End Class

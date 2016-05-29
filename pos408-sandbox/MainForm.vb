@@ -7,7 +7,7 @@
 
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'ShowModal(New SoftwareSalesForm)
+        'ShowModal(New RandomSentencesForm)
     End Sub
 
 
@@ -53,5 +53,9 @@
 
     Private Sub btnSoftwareSales_Click(sender As Object, e As EventArgs) Handles btnSoftwareSales.Click
         ShowModal(New SoftwareSalesForm)
+    End Sub
+
+    Private Sub btnSentences_Click(sender As Object, e As EventArgs) Handles btnSentences.Click
+        ShowModal(New RandomSentencesForm)
     End Sub
 End Class
