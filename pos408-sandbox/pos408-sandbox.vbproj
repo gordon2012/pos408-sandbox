@@ -94,6 +94,12 @@
     <Compile Include="ConstantForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EmployeeDataForm.Designer.vb">
+      <DependentUpon>EmployeeDataForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDataForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ErrorLabelForm.Designer.vb">
       <DependentUpon>ErrorLabelForm.vb</DependentUpon>
     </Compile>
@@ -136,6 +142,12 @@
     <Compile Include="SoftwareSalesForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="StudentTestScoresForm.Designer.vb">
+      <DependentUpon>StudentTestScoresForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentTestScoresForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TransparencyForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +187,9 @@
     <EmbeddedResource Include="ConstantForm.resx">
       <DependentUpon>ConstantForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeDataForm.resx">
+      <DependentUpon>EmployeeDataForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ErrorLabelForm.resx">
       <DependentUpon>ErrorLabelForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -195,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SoftwareSalesForm.resx">
       <DependentUpon>SoftwareSalesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentTestScoresForm.resx">
+      <DependentUpon>StudentTestScoresForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TransparencyForm.resx">
       <DependentUpon>TransparencyForm.vb</DependentUpon>
