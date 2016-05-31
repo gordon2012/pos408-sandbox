@@ -39,6 +39,7 @@ Partial Class MainForm
         Me.btnErrorLabel = New System.Windows.Forms.Button()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.btnSentences = New System.Windows.Forms.Button()
+        Me.btnEmployees = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -208,11 +209,12 @@ Partial Class MainForm
         '
         'GroupBox4
         '
+        Me.GroupBox4.Controls.Add(Me.btnEmployees)
         Me.GroupBox4.Controls.Add(Me.btnSentences)
         Me.GroupBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.Location = New System.Drawing.Point(481, 80)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(148, 71)
+        Me.GroupBox4.Size = New System.Drawing.Size(148, 120)
         Me.GroupBox4.TabIndex = 3
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Week 4"
@@ -226,6 +228,16 @@ Partial Class MainForm
         Me.btnSentences.TabIndex = 0
         Me.btnSentences.Text = "Sentences"
         Me.btnSentences.UseVisualStyleBackColor = True
+        '
+        'btnEmployees
+        '
+        Me.btnEmployees.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEmployees.Location = New System.Drawing.Point(12, 67)
+        Me.btnEmployees.Name = "btnEmployees"
+        Me.btnEmployees.Size = New System.Drawing.Size(124, 37)
+        Me.btnEmployees.TabIndex = 1
+        Me.btnEmployees.Text = "Employees"
+        Me.btnEmployees.UseVisualStyleBackColor = True
         '
         'MainForm
         '
@@ -264,4 +276,5 @@ Partial Class MainForm
     Friend WithEvents btnSoftwareSales As System.Windows.Forms.Button
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
     Friend WithEvents btnSentences As System.Windows.Forms.Button
+    Friend WithEvents btnEmployees As System.Windows.Forms.Button
 End Class

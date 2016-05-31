@@ -7,7 +7,7 @@
 
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ShowModal(New EmployeeDataForm)
+        'ShowModal(New EmployeeDataForm)
     End Sub
 
 
@@ -57,5 +57,9 @@
 
     Private Sub btnSentences_Click(sender As Object, e As EventArgs) Handles btnSentences.Click
         ShowModal(New RandomSentencesForm)
+    End Sub
+
+    Private Sub btnEmployees_Click(sender As Object, e As EventArgs) Handles btnEmployees.Click
+        ShowModal(New EmployeeDataForm)
     End Sub
 End Class
