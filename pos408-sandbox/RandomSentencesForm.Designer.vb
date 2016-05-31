@@ -22,10 +22,14 @@ Partial Class RandomSentencesForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.lstSentences = New System.Windows.Forms.ListBox()
         Me.btnNew = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
+        Me.txtMetrics = New System.Windows.Forms.TextBox()
+        Me.btnAuto = New System.Windows.Forms.Button()
+        Me.tmrAuto = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'lstSentences
@@ -33,7 +37,7 @@ Partial Class RandomSentencesForm
         Me.lstSentences.FormattingEnabled = True
         Me.lstSentences.Location = New System.Drawing.Point(12, 12)
         Me.lstSentences.Name = "lstSentences"
-        Me.lstSentences.Size = New System.Drawing.Size(488, 186)
+        Me.lstSentences.Size = New System.Drawing.Size(317, 186)
         Me.lstSentences.TabIndex = 0
         '
         'btnNew
@@ -63,11 +67,33 @@ Partial Class RandomSentencesForm
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
         '
+        'txtMetrics
+        '
+        Me.txtMetrics.Location = New System.Drawing.Point(352, 12)
+        Me.txtMetrics.Name = "txtMetrics"
+        Me.txtMetrics.Size = New System.Drawing.Size(169, 20)
+        Me.txtMetrics.TabIndex = 4
+        '
+        'btnAuto
+        '
+        Me.btnAuto.Location = New System.Drawing.Point(352, 150)
+        Me.btnAuto.Name = "btnAuto"
+        Me.btnAuto.Size = New System.Drawing.Size(148, 48)
+        Me.btnAuto.TabIndex = 5
+        Me.btnAuto.Text = "Start"
+        Me.btnAuto.UseVisualStyleBackColor = True
+        '
+        'tmrAuto
+        '
+        Me.tmrAuto.Interval = 25
+        '
         'RandomSentencesForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(512, 279)
+        Me.ClientSize = New System.Drawing.Size(533, 279)
+        Me.Controls.Add(Me.btnAuto)
+        Me.Controls.Add(Me.txtMetrics)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnNew)
@@ -75,10 +101,14 @@ Partial Class RandomSentencesForm
         Me.Name = "RandomSentencesForm"
         Me.Text = "Random Sentences"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents lstSentences As System.Windows.Forms.ListBox
     Friend WithEvents btnNew As System.Windows.Forms.Button
     Friend WithEvents btnExit As System.Windows.Forms.Button
     Friend WithEvents btnClear As System.Windows.Forms.Button
+    Friend WithEvents txtMetrics As System.Windows.Forms.TextBox
+    Friend WithEvents btnAuto As System.Windows.Forms.Button
+    Friend WithEvents tmrAuto As System.Windows.Forms.Timer
 End Class
