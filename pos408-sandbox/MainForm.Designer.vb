@@ -38,12 +38,15 @@ Partial Class MainForm
         Me.btnFlowchart = New System.Windows.Forms.Button()
         Me.btnErrorLabel = New System.Windows.Forms.Button()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.btnSentences = New System.Windows.Forms.Button()
         Me.btnEmployees = New System.Windows.Forms.Button()
+        Me.btnSentences = New System.Windows.Forms.Button()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
+        Me.GroupBox5.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblTitle
@@ -219,16 +222,6 @@ Partial Class MainForm
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Week 4"
         '
-        'btnSentences
-        '
-        Me.btnSentences.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSentences.Location = New System.Drawing.Point(12, 24)
-        Me.btnSentences.Name = "btnSentences"
-        Me.btnSentences.Size = New System.Drawing.Size(124, 37)
-        Me.btnSentences.TabIndex = 0
-        Me.btnSentences.Text = "Sentences"
-        Me.btnSentences.UseVisualStyleBackColor = True
-        '
         'btnEmployees
         '
         Me.btnEmployees.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -239,11 +232,43 @@ Partial Class MainForm
         Me.btnEmployees.Text = "Employees"
         Me.btnEmployees.UseVisualStyleBackColor = True
         '
+        'btnSentences
+        '
+        Me.btnSentences.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSentences.Location = New System.Drawing.Point(12, 24)
+        Me.btnSentences.Name = "btnSentences"
+        Me.btnSentences.Size = New System.Drawing.Size(124, 37)
+        Me.btnSentences.TabIndex = 0
+        Me.btnSentences.Text = "Sentences"
+        Me.btnSentences.UseVisualStyleBackColor = True
+        '
+        'GroupBox5
+        '
+        Me.GroupBox5.Controls.Add(Me.Button2)
+        Me.GroupBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox5.Location = New System.Drawing.Point(635, 80)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(148, 120)
+        Me.GroupBox5.TabIndex = 4
+        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Text = "Week 5"
+        '
+        'Button2
+        '
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(12, 24)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(124, 37)
+        Me.Button2.TabIndex = 0
+        Me.Button2.Text = "_Button"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(646, 378)
+        Me.ClientSize = New System.Drawing.Size(809, 378)
+        Me.Controls.Add(Me.GroupBox5)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
@@ -255,6 +280,7 @@ Partial Class MainForm
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox5.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -277,4 +303,6 @@ Partial Class MainForm
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
     Friend WithEvents btnSentences As System.Windows.Forms.Button
     Friend WithEvents btnEmployees As System.Windows.Forms.Button
+    Friend WithEvents GroupBox5 As System.Windows.Forms.GroupBox
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class

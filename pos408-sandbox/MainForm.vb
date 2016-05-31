@@ -7,7 +7,7 @@
 
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ShowModal(New RandomSentencesForm)
+        'ShowModal(New _Form)
     End Sub
 
 
