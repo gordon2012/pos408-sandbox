@@ -7,7 +7,7 @@
 
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'ShowModal(New _Form)
+        ShowModal(New SalesStaffForm)
     End Sub
 
 
