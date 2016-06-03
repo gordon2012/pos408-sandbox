@@ -7,7 +7,7 @@
 
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ShowModal(New SalesStaffForm)
+        'ShowModal(New DatabaseTestForm)
     End Sub
 
 
@@ -61,5 +61,13 @@
 
     Private Sub btnEmployees_Click(sender As Object, e As EventArgs) Handles btnEmployees.Click
         ShowModal(New EmployeeDataForm)
+    End Sub
+
+    Private Sub btnSales_Click(sender As Object, e As EventArgs) Handles btnSales.Click
+        ShowModal(New SalesStaffForm)
+    End Sub
+
+    Private Sub btnDatabase_Click(sender As Object, e As EventArgs) Handles btnDatabase.Click
+        ShowModal(New DatabaseTestForm)
     End Sub
 End Class

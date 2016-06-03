@@ -64,6 +64,17 @@ Namespace My
                 Return CType(Me("CompanyConnectionString"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\KudlerCustDB.mdf;Int"& _ 
+            "egrated Security=True")>  _
+        Public ReadOnly Property KudlerCustDBConnectionString() As String
+            Get
+                Return CType(Me("KudlerCustDBConnectionString"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 

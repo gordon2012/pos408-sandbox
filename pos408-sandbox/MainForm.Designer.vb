@@ -41,7 +41,8 @@ Partial Class MainForm
         Me.btnEmployees = New System.Windows.Forms.Button()
         Me.btnSentences = New System.Windows.Forms.Button()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnSales = New System.Windows.Forms.Button()
+        Me.btnDatabase = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -244,24 +245,35 @@ Partial Class MainForm
         '
         'GroupBox5
         '
-        Me.GroupBox5.Controls.Add(Me.Button2)
+        Me.GroupBox5.Controls.Add(Me.btnDatabase)
+        Me.GroupBox5.Controls.Add(Me.btnSales)
         Me.GroupBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox5.Location = New System.Drawing.Point(635, 80)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(148, 120)
+        Me.GroupBox5.Size = New System.Drawing.Size(148, 257)
         Me.GroupBox5.TabIndex = 4
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Week 5"
         '
-        'Button2
+        'btnSales
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(12, 24)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(124, 37)
-        Me.Button2.TabIndex = 0
-        Me.Button2.Text = "_Button"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnSales.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSales.Location = New System.Drawing.Point(12, 24)
+        Me.btnSales.Name = "btnSales"
+        Me.btnSales.Size = New System.Drawing.Size(124, 37)
+        Me.btnSales.TabIndex = 0
+        Me.btnSales.Text = "Sales"
+        Me.btnSales.UseVisualStyleBackColor = True
+        '
+        'btnDatabase
+        '
+        Me.btnDatabase.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDatabase.Location = New System.Drawing.Point(12, 67)
+        Me.btnDatabase.Name = "btnDatabase"
+        Me.btnDatabase.Size = New System.Drawing.Size(124, 37)
+        Me.btnDatabase.TabIndex = 1
+        Me.btnDatabase.Text = "Database"
+        Me.btnDatabase.UseVisualStyleBackColor = True
         '
         'MainForm
         '
@@ -304,5 +316,6 @@ Partial Class MainForm
     Friend WithEvents btnSentences As System.Windows.Forms.Button
     Friend WithEvents btnEmployees As System.Windows.Forms.Button
     Friend WithEvents GroupBox5 As System.Windows.Forms.GroupBox
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnSales As System.Windows.Forms.Button
+    Friend WithEvents btnDatabase As System.Windows.Forms.Button
 End Class
