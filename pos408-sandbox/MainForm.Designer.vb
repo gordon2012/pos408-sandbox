@@ -41,8 +41,9 @@ Partial Class MainForm
         Me.btnEmployees = New System.Windows.Forms.Button()
         Me.btnSentences = New System.Windows.Forms.Button()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
-        Me.btnSales = New System.Windows.Forms.Button()
         Me.btnDatabase = New System.Windows.Forms.Button()
+        Me.btnSales = New System.Windows.Forms.Button()
+        Me.btnKarate = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -245,15 +246,26 @@ Partial Class MainForm
         '
         'GroupBox5
         '
+        Me.GroupBox5.Controls.Add(Me.btnKarate)
         Me.GroupBox5.Controls.Add(Me.btnDatabase)
         Me.GroupBox5.Controls.Add(Me.btnSales)
         Me.GroupBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox5.Location = New System.Drawing.Point(635, 80)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(148, 257)
+        Me.GroupBox5.Size = New System.Drawing.Size(148, 159)
         Me.GroupBox5.TabIndex = 4
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Week 5"
+        '
+        'btnDatabase
+        '
+        Me.btnDatabase.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDatabase.Location = New System.Drawing.Point(12, 67)
+        Me.btnDatabase.Name = "btnDatabase"
+        Me.btnDatabase.Size = New System.Drawing.Size(124, 37)
+        Me.btnDatabase.TabIndex = 1
+        Me.btnDatabase.Text = "Database"
+        Me.btnDatabase.UseVisualStyleBackColor = True
         '
         'btnSales
         '
@@ -265,15 +277,15 @@ Partial Class MainForm
         Me.btnSales.Text = "Sales"
         Me.btnSales.UseVisualStyleBackColor = True
         '
-        'btnDatabase
+        'btnKarate
         '
-        Me.btnDatabase.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDatabase.Location = New System.Drawing.Point(12, 67)
-        Me.btnDatabase.Name = "btnDatabase"
-        Me.btnDatabase.Size = New System.Drawing.Size(124, 37)
-        Me.btnDatabase.TabIndex = 1
-        Me.btnDatabase.Text = "Database"
-        Me.btnDatabase.UseVisualStyleBackColor = True
+        Me.btnKarate.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnKarate.Location = New System.Drawing.Point(12, 110)
+        Me.btnKarate.Name = "btnKarate"
+        Me.btnKarate.Size = New System.Drawing.Size(124, 37)
+        Me.btnKarate.TabIndex = 2
+        Me.btnKarate.Text = "Karate"
+        Me.btnKarate.UseVisualStyleBackColor = True
         '
         'MainForm
         '
@@ -318,4 +330,5 @@ Partial Class MainForm
     Friend WithEvents GroupBox5 As System.Windows.Forms.GroupBox
     Friend WithEvents btnSales As System.Windows.Forms.Button
     Friend WithEvents btnDatabase As System.Windows.Forms.Button
+    Friend WithEvents btnKarate As System.Windows.Forms.Button
 End Class

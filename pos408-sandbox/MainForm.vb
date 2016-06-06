@@ -7,7 +7,7 @@
 
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'ShowModal(New DatabaseTestForm)
+        'ShowModal(New KarateForm)
     End Sub
 
 
@@ -69,5 +69,9 @@
 
     Private Sub btnDatabase_Click(sender As Object, e As EventArgs) Handles btnDatabase.Click
         ShowModal(New DatabaseTestForm)
+    End Sub
+
+    Private Sub btnKarate_Click(sender As Object, e As EventArgs) Handles btnKarate.Click
+        ShowModal(New KarateForm)
     End Sub
 End Class

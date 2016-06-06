@@ -144,6 +144,12 @@
     <Compile Include="FlowchartForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="KarateForm.Designer.vb">
+      <DependentUpon>KarateForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KarateForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="KudlerCustDBDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -154,6 +160,11 @@
     </Compile>
     <Compile Include="OrElseForm.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PaymentsDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="RandomSentencesForm.Designer.vb">
       <DependentUpon>RandomSentencesForm.vb</DependentUpon>
@@ -233,6 +244,9 @@
     <EmbeddedResource Include="FlowchartForm.resx">
       <DependentUpon>FlowchartForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KarateForm.resx">
+      <DependentUpon>KarateForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OrElseForm.resx">
       <DependentUpon>OrElseForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -294,6 +308,17 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="PaymentsDataSet.xsc">
+      <DependentUpon>PaymentsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PaymentsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PaymentsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PaymentsDataSet.xss">
+      <DependentUpon>PaymentsDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Company.mdf">
@@ -302,6 +327,13 @@
     <Content Include="Company_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Company.mdf</DependentUpon>
+    </Content>
+    <Content Include="Karate.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Karate_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Karate.mdf</DependentUpon>
     </Content>
     <Content Include="KudlerCustDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
