@@ -144,6 +144,14 @@
     <Compile Include="FlowchartForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="InstructorsScheduleDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InstructorsScheduleDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorsScheduleDataSet.vb">
+      <DependentUpon>InstructorsScheduleDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="KarateForm.Designer.vb">
       <DependentUpon>KarateForm.vb</DependentUpon>
     </Compile>
@@ -182,6 +190,12 @@
       <DependentUpon>SalesStaffForm.vb</DependentUpon>
     </Compile>
     <Compile Include="SalesStaffForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduleForm.Designer.vb">
+      <DependentUpon>ScheduleForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SoftwareSalesForm.Designer.vb">
@@ -259,6 +273,9 @@
     <EmbeddedResource Include="SalesStaffForm.resx">
       <DependentUpon>SalesStaffForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleForm.resx">
+      <DependentUpon>ScheduleForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SoftwareSalesForm.resx">
       <DependentUpon>SoftwareSalesForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -286,6 +303,17 @@
     </None>
     <None Include="CompanyDataSet.xss">
       <DependentUpon>CompanyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InstructorsScheduleDataSet.xsc">
+      <DependentUpon>InstructorsScheduleDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InstructorsScheduleDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InstructorsScheduleDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InstructorsScheduleDataSet.xss">
+      <DependentUpon>InstructorsScheduleDataSet.xsd</DependentUpon>
     </None>
     <None Include="KudlerCustDBDataSet.xsc">
       <DependentUpon>KudlerCustDBDataSet.xsd</DependentUpon>

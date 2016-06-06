@@ -7,7 +7,7 @@
 
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'ShowModal(New KarateForm)
+        ShowModal(New ScheduleForm)
     End Sub
 
 
@@ -73,5 +73,9 @@
 
     Private Sub btnKarate_Click(sender As Object, e As EventArgs) Handles btnKarate.Click
         ShowModal(New KarateForm)
+    End Sub
+
+    Private Sub btnSchedule_Click(sender As Object, e As EventArgs) Handles btnSchedule.Click
+        ShowModal(New ScheduleForm)
     End Sub
 End Class
